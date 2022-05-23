@@ -1,0 +1,50 @@
+TASKS
+[X] mail system
+[X] landing page
+[X] replace instagram icons
+[X] replace instagram with featherfax
+[X] replace all svg images
+[X] repace all png images
+[X] replace all jpg images
+[X] change button color - primary color
+[X] change button color - secondary color
+[X] change the edit-route button disabled from sky blue
+[X] remove all names not related to the project owner
+[X] restructure the _test_ folder to contain updated data !important
+[X] restructure the _MOCKS_ folder to contain updated data !important
+[X] update all snapshots in components _test_ !important
+[X] reduce intensity of loading page
+[X] change background color - - default is white
+[X] change background layout 
+[] use Jsscrambler to protect source code
+[X] remove <hr> that is next to the site name and site logo
+[] use webpack-4 and babel 7 
+[] update react version
+[] update all project dependencies
+[X] fix mouse over blipping for explore route item-lists !not)important
+[] Add story feature- images
+[]Add story feature-video
+[] Add video call feature
+[X] Change the button color for the pop up window(blue) to (grey)
+[X] Fix firstname and lastname missing first letters
+[] Change firstname and lastname to validate capital letters for f and l names
+[X] Fix edit route broken button link
+[X] change image save prefix to featherfax not instagram
+[] when viewing another user's profile, hide the add + link for profile update
+[X] Put copyright on unregistered routes
+[X] change font style
+APP MODIFICATIONS
+[X] error page
+[X] error component
+[] rename search route from search/instagram to search/featherfax
+[] add end-end encryption for messages and all other user communication utilities
+[] update follow-system to mitigate or stop sql-injection
+[] add audio call feature
+[] add user verification feature with verified badge
+[] add blipping animation to feather icon for loading screen
+[]add view all stories to explore route
+[]specify new storage path for all saved images etc remove form root_dir/dist 
+[]fix content spacing for feed page when its empty--if no users, then remove story_app
+[]Edit all !(me) component messages that are shown on user profile route 
+spinner-background: #ee - #efefef
+loading page- linear-gradient- replaced spinner with image

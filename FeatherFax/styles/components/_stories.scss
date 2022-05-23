@@ -1,0 +1,236 @@
+
+// ------------------------------------------------
+
+$purple-gradient: linear-gradient(45deg, rgba(87,29,146,1) 0%,rgba(172,25,102,1) 100%);
+$purple-gradient: linear-gradient(to bottom right, #C90A6D, #FF48A0);
+$shadow: 0 13px 26px rgba(#000, .2), 0 3px 6px rgba(#000, .2);
+
+// ------------------------------------------------
+$color_modal_1: white;
+$color_modal_2: black;
+$background_color_modal_1: #b71c1c;
+$background_color_modal_2: #1b5e20;
+$background_color_modal_3: rgba(48, 49, 48, 0.42);
+
+.row{
+    width: 375px;
+ &:after {
+   content: "";
+   display: grid;
+   clear: both;
+ }
+ //i changed column width and it began displaying in horizontal format
+ .column {
+   float: left;
+   width: 30%;
+   padding: 0 19px;
+   padding-bottom: 10px;
+   padding-right: 54px;
+ }
+}
+p{
+ padding-left: 15px;
+ padding-bottom: 10px;
+}
+.wrapper {
+ width: 140px;
+ height: 220px;
+    //background: #FDFEFF;
+    //background-image: url('https://picsum.photos/1080/1920');
+    //background-blend-mode: screen;
+    //filter: alpha(opacity=50);
+    /* Center and scale the image nicely */
+    //background-position: center;
+    //background-repeat: no-repeat;
+    //background-size: cover;
+
+ transition: background .6s ease;
+ border-radius: 10px;
+ padding: 10px 10px 10px 10px;
+ box-shadow: 0 4px 20px rgba(#000000, .2);
+ .profile {
+   margin-top: .2em;
+   position: relative;
+   .thumbnail {
+     width: 80px;
+     height: 80px;
+     display: flex;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 1.5em;
+     border-radius: 100%;
+     box-shadow: $shadow;
+   }
+   .name {
+     font-size: 14px;
+     font-weight: 600;
+     text-align: left;
+    color: greenyellow;
+
+   }
+   .description {
+     color: greenyellow;
+     font-size: 8px;
+     font-weight: 300;
+     text-align: right;
+     margin-bottom: 1.3em;
+   }
+
+ }
+
+}
+
+//main story-container
+// SUGGESTED STORIES
+
+.recomm_story{
+  @include inst;
+
+  & .recomm_story_top{
+    @include header;
+    padding: 8px;
+
+    & span{
+      font-size: 15px;
+      margin-right: 155px;
+      margin-left: 5px;
+    }
+
+    & .add_story{
+      padding-top: 25px;
+      padding-bottom: 10px;
+      & span {
+        font-size: 12px;
+        padding: 7px 7px;
+        font-weight: 600;
+        background: $pric;
+        border: 1px solid $pric; /*#3e91b3*/
+        color: $ff;
+        border-radius: 3px;
+        cursor: pointer;
+        outline: none;
+        &:hover{ opacity: .9; }
+      }
+    }
+
+    & a{
+      margin-left: 155px;
+      font-size: 15px;
+      color: lightslategrey;
+
+      &.recomm_story_all{
+        margin-left: 12px;
+      }
+
+      &:hover{
+        color: $dark;
+      }
+
+    }
+
+  }
+
+  & .recomm_story_main{
+    margin-top: 7px;
+  }
+
+  & .spinner{
+    left: 641px !important;
+    top: 85px !important;
+  }
+
+  & .recomms_story{
+
+
+
+
+
+
+  }
+
+}
+
+
+// POST IT STORY TEASER
+.post_it_story{
+    @include inst;
+    overflow: auto;
+    padding: 5px 10px;
+    color: #bdbdbd;
+    font-size: 12px;
+
+    & img{
+        width: 40px;
+        height: 40px;
+        position: relative;
+        float: left;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.03);
+        }
+    }
+
+    & .story_teaser{
+        position: relative;
+        float: left;
+        left: 15px;
+        top: 1px;
+        width: 45.3%;
+        height: 23px;
+
+        &::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        & span{
+            position: relative;
+            display: inline-block;
+            width: 90%;
+            height: 33px;
+            line-height: 2.7;
+            cursor: text;
+        }
+
+    }
+
+}
+
+//Story Modal container
+.modal{
+    width: 360.4px;
+
+    .modal-wrapper {
+        background: lawngreen;
+        transition: all .8s;
+    }
+    .modal-header {
+        line-height: 20px;
+        text-align: center;
+        p{
+            font-size: 15px;
+            .close-modal-btn {
+                color: dimgrey;
+                cursor: pointer;
+                float: right;
+                font-size: 30px;
+                margin: 0;
+                padding-top: 3.3px;
+                &:hover {
+                    color: lightgrey;
+                }
+        }
+
+    }
+    .modal-body {
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    }
+
+
+}

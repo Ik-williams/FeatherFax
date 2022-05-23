@@ -1,0 +1,107 @@
+[X] include full story variables !already included
+[X] fix click to pause story
+[X] fix click to view next story
+[X] fix routes for story
+[X] fix timestamp for stories
+[] delete story after 24hrs(solved but not implemented yet)
+[] highlight unseen stories. !important
+[X] show story in a modal window
+[X] add  close story button
+[X] redux for stories
+[X] create stories table in mysql
+[X] Add story feature
+[X] create onclick handler that handles modal add-story route
+[X] create add-story route(use post mechanism logic in featherfax)
+[X]handle story upload(use post mechanism logic in featherfax)
+[]code clean-up(prop-validation and default-props)
+[]add save story feature
+[X]implement- get-all-user-following-stories route 
+[X]implement get=all-user-stories route
+[X]implement saved user story route in profile route
+[X]show all user stories in profile route
+[X]implement delete stories route
+[] add story view count feature
+[]implement story reactions feature(use react-animate-stories )
+[] write tests story
+[X]dispatch story like image comment without pop up modal. !important
+[X]add nothing message when no story is available
+[X]implement display all user stories in home route
+[X]add lazy-loading for each story image item
+[]on view story end >>> close the story modal view. !important
+[X]change add story button color. Changed it to look like post-it from post
+[X]add refresh story feed
+[X]add image with blur to story background(preview) !important
+[]add view all stories to the explore-route.!important
+[X]create container like suggested with button-refresh/view_all
+[]add tag other users in story feature. *** !important ***
+[]Use a custom content loader for story components.!important
+[]Restructure story component to mirror post code implementation flow
+[X]Implement a function so that the user cant "seen" their own story
+[X]Redux implementation to retrieve all user stories(:recently posted stories)
+[X]Redux implementaion to retrieve saved user stories
+[]Create a function to retrieve all user stories(:saved stories and recently posted stories)
+[X]Create a table in the database for saved stories
+[]Story should be hidden. Unless user has a story or saved a story
+[]Fix bug: uploading multiple stories in succession
+[]Create a function to check if a user has reached the max of 4 stories
+[]Check if user has exceeded the limit for story uploads before proceeding to post a story
+[]Make story feed fixed when scrolling post feed
+[]Make suggested fixed when scrolling post feed
+-------------
+
+[X]Get story from database
+[X]Populate storyFeed with data
+[X]Show four random stories
+[X] implement handy-timeago story function
+[X] get the username of the story owner
+[X]get the profile picture(avatar) of the story owner
+[X]display story sneakpeak as background  
+[]rename style names to match element function in story component
+[X]get actual story from db and populate story modal view
+[X]return only one story per user for story app feed
+[]when count of story is equal to one return one shadow  placeholder empty component
+[X]remove current user story from storyFeed.
+[X]Add story seen column to stories table
+[X]Implement story seen function
+[]Add delete after 24hrs function.(solved but not implemented yet)
+[X]fix modal container for story modal
+[]Wrap story app with fade in component
+[X]Fix bug, story is been loaded with the wrong values in storyFeed
+[X]Dispatch seen when story is viewed in 
+[]Fix story not showing notification when unsaved
+[]Implement lifeCycle methods for each stories component
+[]reduce view story padding when stories = 1
+[]implement make story private/public feature
+[]implement approve follow to view private profile
+[]reduce story window in home route when stories = 1
+[X]If user != current user || admin, make save story and delete story buttons hidden & false
+[X]implement a function to read and evaluate story time
+[X]find a place to run auto_delete_story/preferably header or icon component--!important
+[]Create an Administrative function to delete story files that have been auto deleted from the database
+-----
+Bug; After navigating from main user profile to another user profile
+-stories-s component does not get destroyed
+
+------
+the modal view("dispatch story_seen for all user stories == user id" minus the story_id)
+Replicate BUG
+-Visit profile route 
+-Go back to home route
+-Click on story
+-Story should return a different story in the modal window
+Fix: Scrap getUserStories redux implementation
+-Get pure stories directly from storyFeed
+-Filter and retrieve the user stories in storyViewer
+[]make as many components stateless as possible
+keys: [] > not completed, [X] > completed, [-] > not important.
+-----
+BUG: react error, stateful component story_viewer-s on view click
+won't show modal view 
+Replicate BUG
+-use stateful story_viewer-s component
+-navigate to profile routes
+-click view located on story component
+-react should throw an error
+FIX: use redux to implement 
+1.open modal handler
+2.close modal handler

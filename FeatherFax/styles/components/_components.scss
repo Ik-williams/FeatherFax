@@ -1,0 +1,204 @@
+// components
+@import 'sidebar';
+@import 'header';
+@import 'modal';
+@import 'avatars';
+@import 'prompt';
+@import 'emoji';
+@import 'stickers';
+@import 'spinner';
+@import 'search';
+@import 'search-followings';
+@import 'image-show';
+@import 'suggested';
+@import 'mutuals';
+@import 'noti-speak';
+@import 'multiple_el';
+@import 'stories';
+// OTHER COMPOENTS
+
+// NOTHING COMPONENT
+.home_last_mssg{
+  position: relative;
+  border-radius: 4px;
+  background:$ff;
+  border: 1px solid $header_border;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  cursor: default;
+
+  & img{
+    position: relative;
+    text-align: center;
+    width: 150px;
+    /*margin-bottom: 10px;*/
+    display: block;
+    left: 48%;
+    transform: translate(-50%);
+  }
+
+  & span{
+    position: relative;
+    text-align: center;
+    display: block;
+    left: -5px;
+    /*top: -5px;*/
+  }
+
+}
+
+// PAGE LOADING
+.page_loading {
+  position: relative;
+  top: 215px;
+  left: 275px;
+}
+
+// PAGE END
+.page_end{
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+  color: $d_light;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid $fb;
+
+  &:hover{
+    border: 1px solid $ee;
+  }
+}
+
+// RECOMMENDATION TEASER
+.recomm_teaser{
+  @include inst;
+  padding: 10px;
+  margin-top: 8px;
+  text-align: right;
+
+  & span{
+    font-size: 14px;
+    display: block;
+    text-align: left;
+  }
+
+  & a{
+    padding: 4px 10px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+}
+//Confirm alert delete
+$alert_1: #666;
+$alert_2: #eee;
+$font_family_alert: Arial, Helvetica, sans-serif;
+
+@-webkit-keyframes "react-confirm-alert-fadeIn" {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes "react-confirm-alert-fadeIn" {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes "react-confirm-alert-fadeIn" {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes "react-confirm-alert-fadeIn" {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+body.react-confirm-alert-body-element {
+    overflow: hidden;
+}
+.react-confirm-alert-blur {
+    filter: url(#gaussian-blur);
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+.react-confirm-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.9);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    opacity: 0;
+    -webkit-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+    -moz-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+    -o-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+    animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+}
+.react-confirm-alert-body {
+    font-family: $font_family_alert;
+    width: 400px;
+    padding: 30px;
+    text-align: left;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
+    color: $alert_1;
+    >h1 {
+        margin-top: 0;
+    }
+    >h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+}
+.react-confirm-alert-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.react-confirm-alert-button-group {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    >button {
+        outline: none;
+        background: #333;
+        border: none;
+        display: inline-block;
+        padding: 6px 18px;
+        color: $alert_2;
+        margin-right: 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+}

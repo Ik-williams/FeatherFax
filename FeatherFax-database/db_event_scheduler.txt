@@ -1,0 +1,38 @@
+DELETE FROM seen WHERE story_id=?
+//DELETE FROM saved WHERE story_id=?
+DELETE FROM notifications WHERE story_id=?
+DELETE FROM stories WHERE story_id=?
+
+use union
+use story time	
+
+//working test query for portfolio db                                                            
+DELETE FROM persons, projects, customers USING persons INNER JOIN projects INNER JOIN customers
+WHERE persons.PersonID=projects.personID AND projects.personID=customers.personID;
+
+//Delete expired stories
+DELETE FROM stories, seen, notifications USING stories INNER JOIN seen INNER JOIN notifications
+WHERE  FROM_UNIXTIME(stories.story_time / 1000) > UNIX_TIMESTAMP(timestampadd(day, -3, now())) 	
+
+//stories.story_id=seen.story_id AND seen.story_id=notifications.story_id AND	
+
+possible solution
+(event_scheduler time to run interval = 6hrs)
+-Delete expired stories first from stories table
+-Use normal query
+(event_scheduler time to run interval = 12hrs) 
+=Delete from seen 
+-Use join query
+(event_scheduler time to run interval = 12hrs)
+-Delete from notification
+-use join query
+
+implelmentation
+DELETE FROM stories WHERE  FROM_UNIXTIME(stories.story_time / 1000) > UNIX_TIMESTAMP(timestampadd(day, -1, now())) 
+
+DELETE FROM seen USING stories INNER JOIN seen INNER JOIN notifications
+WHERE  stories.story_id <> seen.story_id AND notifications.story_id <> 0
+
+DELETE FROM notifications USING stories INNER JOIN seen INNER JOIN notifications
+WHERE stories.story_id <> notifications.story_id AND notifications.story_id <> 0 
+ 

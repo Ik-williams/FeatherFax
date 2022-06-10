@@ -1,13 +1,13 @@
 <div align="center">
-  <img alt="Demo" src="https://raw.githubusercontent.com/Ik-williams/Portfolio/main/src/Assets/Projects/FFBioPage.png" />
+  <img alt="Demo" src="https://raw.githubusercontent.com/Ik-williams/Portfolio/main/src/Assets/Projects/featherfax/FFBioPage.png" />
 </div>
 
 <div align="center">
-  <img alt="Demo" src="https://raw.githubusercontent.com/Ik-williams/Portfolio/main/src/Assets/Projects/FFHome.png" />
+  <img alt="Demo" src="https://raw.githubusercontent.com/Ik-williams/Portfolio/main/src/Assets/Projects/featherfax/FFHome.png" />
 </div>
 
 <div align="center">
-  <img alt="Demo" src="https://raw.githubusercontent.com/Ik-williams/Portfolio/main/src/Assets/Projects/FFExplorePage.png" />
+  <img alt="Demo" src="https://raw.githubusercontent.com/Ik-williams/Portfolio/main/src/Assets/Projects/featherfax/FFExplorePage.png" />
 </div>
 
 ### Technologies
